@@ -1,4 +1,4 @@
-package com.generalinsurance.service;
+package com.generalinsurance.service.user;
 
 import java.util.List;
 

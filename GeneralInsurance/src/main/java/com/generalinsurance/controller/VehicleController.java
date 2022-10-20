@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.generalinsurance.model.Vehicle;
 import com.generalinsurance.myPackage.MyResourceNotFound;
 import com.generalinsurance.repository.UserRegistrationRepository;
-import com.generalinsurance.service.VehicleService;
+import com.generalinsurance.service.vehicle.VehicleService;
 
 
 
