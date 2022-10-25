@@ -1,0 +1,66 @@
+<div class="bootstrap-wrapper">
+    <div class="container">
+      <div class="row" style="margin-top: 20px">
+        <div class="col-md-6 offset-md-3">
+          <mat-card>
+            <div class="container text-center">
+              <img
+                src="../../../assets/user-login.png"
+                style="height: 250px; width: 300px"
+              />
+            </div>
+  
+            <h1 class="text-center"><b>Login Here !!</b></h1>
+  
+           
+  
+            <form (ngSubmit)="loginSubmit()">
+              <!--username field-->
+              <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Email Id</mat-label>
+                <input 
+                [(ngModel)]="loginData.email"
+                  name="email"
+                 type="email" required matInput placeholder="Enter here" />
+                <mat-hint>Valid User Name !!</mat-hint>
+              </mat-form-field>
+  
+              <!--password field-->
+              <mat-form-field class="full-width" appearance="outline">
+                <mat-label>User Password</mat-label>
+                <input [(ngModel)]="loginData.password"
+                  name="password"
+                  type="password"
+                  required
+                  matInput
+                  placeholder="Enter here"
+                />
+              </mat-form-field>
+  
+              <div class="container">
+                <section class="example-section">
+                  <mat-checkbox class="example-margin">Remember me</mat-checkbox>
+                 </section>
+              </div>
+  
+              <div class="container text-center">
+                <button mat-raised-button color="primary" type="submit">
+                  Login
+                </button>
+                <button
+                  class="ml20"
+                  mat-raised-button
+                  color="accent"
+                  type="submit"
+                >
+                  Rest
+                </button>
+              </div>
+              <small class="float-right" [routerLink]="['/registration']">New user ? Register here</small>
+            </form>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+  

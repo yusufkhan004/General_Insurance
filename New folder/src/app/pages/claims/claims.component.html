@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="claims.component.css">
+    </head>
+    <body>
+        <div id="claims">
+            <h1> Claim Insurance </h1>
+        </div>
+        <h1>{{message}}</h1>
+        <div id="claims1">
+            <form class="form">
+                <mat-form-field class="full-width" appearance="fill">
+                  <mat-label>Policy Number</mat-label>
+                  <input required [(ngModel)]="claims.policyNumber" name="policyno" id="policyno" minlength="9" matInput placeholder="Ex. 235445576">
+                </mat-form-field><br><br><br>
+                <mat-form-field class="full-width" appearance="fill">
+                    <mat-label>Mobile Number</mat-label>
+                    <input required [(ngModel)]="claims.mobileNumber" name="mobileno" id="mobileno" minlength="10" matInput placeholder="Ex. 985445576">
+                  </mat-form-field><br><br><br>
+                    <div id="cl">
+                        <h2>Reason to Claim Insurance</h2>
+                    <input type="radio" [(ngModel)]="claims.reason" name="reason" id="reason1" value="Natural Disaster"> 
+                    <label>Natural Disaster</label><br><br>
+                    <input type="radio" [(ngModel)]="claims.reason" name="reason" id="reason2" value="Man-Made Disaster">
+                    <label>Man-Made Disaster</label><br><br>
+                    <input type="radio" [(ngModel)]="claims.reason" name="reason" id="reason3" value="Road Accident">
+                    <label>Road Accident</label><br><br>
+                    <input type="radio" [(ngModel)]="claims.reason" name="reason" id="reason4" value="Theft">
+                    <label>Theft</label><br>
+                    </div>
+                
+                
+                
+                <!-- <mat-button-toggle-group name="fontStyle" [(ngModel)]="claims.reason" required aria-label="Font Style" id="buttToggle" layout="column" layout-align="space-around-center" >
+                    <mat-button-toggle name="r1" value="Natural Disaster">Natural Disaster</mat-button-toggle>
+                    <mat-button-toggle name="r2" value="Man-Made Disaster">Man-Made Disaster</mat-button-toggle>
+                    <mat-button-toggle name="r3" value="Road Accident">Road Accident</mat-button-toggle>
+                    <mat-button-toggle name="r4" value="Theft">Theft</mat-button-toggle>
+                </mat-button-toggle-group> -->
+                
+                <div class="button-row">
+                   <button mat-raised-button name="submit" (click)="claimsNow()">Submit</button>
+                  </div>
+              </form>
+        </div>
+    </body>
+</html>
+

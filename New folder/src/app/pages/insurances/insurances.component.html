@@ -1,0 +1,92 @@
+<div class="bootstrap-wrapper">
+
+    <div class="container">
+
+        <div class="row" style="margin-top: 20px;">
+
+            <div class="col-md-6 offset-md-3">
+ 
+                   <div class="container text-center">
+                       <img src="../../../assets/buyImage.svg" alt="">
+                   </div>
+                   <h1 class="text-center"><b>Vehicle-Insurance</b></h1>
+
+                 
+                   <form (ngSubmit)="formSubmit()">
+
+                    
+                      
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Manufacturer Name</mat-label>
+                        <input
+                        [(ngModel)]="insurance.manufacturer"
+                        name="manufacturer"
+                        matInput placeholder="Enter here">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Policy Vehicle Type</mat-label>
+                        <input
+                        [(ngModel)]="insurance.policyVehicalType" 
+                        name="policyVehicalType"
+                        matInput placeholder="Enter here">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Model</mat-label>
+                        <input
+                        [(ngModel)]="insurance.model" 
+                        name="model"
+                        matInput placeholder="Enter here">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Driving License</mat-label>
+                        <input
+                        [(ngModel)]="insurance.drivinglicense"
+                        name="drivinglicense" 
+                        matInput placeholder="Enter here">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Purchase Date </mat-label>
+                        <input type="date"
+                        [(ngModel)]="insurance.purchaseDate" 
+                        name="purchaseDate"
+                        matInput placeholder="Enter here">
+                    </mat-form-field>
+
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Engine Number</mat-label>
+                        <input
+                        [(ngModel)]="insurance.engineNumber"
+                        name="engineNumber"
+                         matInput placeholder="Enter here">
+                    </mat-form-field>
+
+                    
+                    <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Chasis Number</mat-label>
+                        <input
+                        [(ngModel)]="insurance.chasisNumber"
+                        name="chasisNumber" 
+                        matInput placeholder="Enter here">
+                    </mat-form-field>
+
+                    <div class="container text-center" >
+
+                        <button type="submit" mat-raised-button color="primary">Submit</button>
+                        <button style="margin-left: 20px" mat-raised-button color="accent">Clear</button>
+
+                    </div>
+
+
+                   </form>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+

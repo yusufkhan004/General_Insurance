@@ -1,0 +1,40 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.whyinsurance{
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+    border: .1px solid black;
+    height: 350px;
+    width: 50%;
+}
+
+.useful-links{
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+    border: .1px solid black;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+button{
+    display: block;
+}
+
+.btn {
+    width: 240px;
+}
+
+img{
+    width: 100%;
+    height: 500px;
+}

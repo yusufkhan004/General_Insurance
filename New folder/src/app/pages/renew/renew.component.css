@@ -1,0 +1,40 @@
+#renew{
+    height:60px;
+    width:60%;
+    background-color: #0047AB;
+    margin:auto;
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    padding-top: 30px
+}
+#renew1{
+    height:380px;
+    width:500px;
+    background-color: #D3D3D3 ;
+    margin:auto;
+    text-align: center;
+    margin-top: 60px;
+    padding-bottom: 80px;
+}
+.form {
+    min-width: 150px;
+    max-width: 400px;
+    width: 100%;
+    margin-left: 15px;
+    padding: 35px;
+  }
+  
+  .full-width {
+    width: 100%;
+    background-color: white;
+  }
+  .button-row {
+    display: table-cell;
+    width: 490px;
+    padding: 35px
+  }
+  
+  .button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
